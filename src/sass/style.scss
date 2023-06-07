@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  text-decoration: none !important;
+  font-family: "Open Sans", sans-serif !important;
+
+}
+
+.quickmanage {
+  height: 100vh;
+  @import "./components/sidebar-menu";
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 216px;
+    width: calc(100% - 216px);
+    height: inherit;
+    overflow: auto;
+    transition-duration: 0.5s;
+    @import "./components/navbar";
+    @import "./components/main";
+
+    &.left {
+      left: 0;
+      width: 100%;
+    }
+  }
+}

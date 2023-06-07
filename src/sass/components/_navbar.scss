@@ -1,0 +1,37 @@
+@import "./fonts";
+
+nav {
+  width: 100%;
+  min-height: 65px;
+  padding: 0 27px;
+  background-color: #005b82;
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: transparent !important;
+    justify-content: center;
+    align-items: center;
+    color: #c5c5c5;
+    font-size: 20px;
+    &:active {
+      color: #005b82 !important;
+      background-color: #c5c5c5 !important;
+      border: none !important;
+    }
+  }
+  .user__section {
+    height: 65px;
+    cursor: pointer;
+    h4.name {
+      @include normal-semibold-xsm-font;
+      color: #ffffff;
+      text-align: right;
+    }
+    h4.owner {
+      @include normal-semibold-xsm-font;
+      color: #c5c5c5;
+      text-align: right;
+    }
+  }
+}

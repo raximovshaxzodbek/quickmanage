@@ -1,0 +1,101 @@
+@import "./fonts";
+
+.sidebar__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 216px;
+  background-color: #06273d;
+  height: 100vh;
+  overflow: auto;
+  transition-duration: 0.5s;
+  .title {
+    height: 65px;
+    border-bottom: 0.5px solid #c5c5c5;
+  }
+  .quick__add {
+    padding: 15px 0 12.76px 13px;
+
+    button {
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #00405b;
+      background: linear-gradient(90deg, #51fdb1 0%, #22b9ff 100%);
+      border-radius: 30px;
+      @include normal-bolder-md-font;
+      font-weight: 700;
+    }
+  }
+
+  .menu {
+    padding: 0 5px;
+    a.router-link {
+      border-left: 4px solid transparent;
+      transition-duration: 0.5s;
+      &:hover,
+      &.active-router-link {
+        border-left: 4px solid #22b9ff;
+      }
+    }
+    .drop__down {
+      .sort__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c5c5c5;
+        padding-top: 5px;
+        transition-duration: 0.5s;
+        transform-origin: center;
+        border: none !important;
+        outline: none;
+        &.active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &-icon {
+      @include normal-bolder-md-font;
+      display: flex;
+      align-items: center;
+      color: #c5c5c5;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+    }
+
+    .badge {
+      top: -5px;
+      right: -5%;
+      @include normal-semibold-xxsm-font;
+      color: #ff0000;
+    }
+
+    .list-group-disc {
+      display: none;
+      scale: 0;
+      .list-item {
+        color: #c5c5c5;
+        font-size: 12px;
+        margin: 5px 0;
+        &-link {
+          @include normal-semibold-sm-font;
+          color: #c5c5c5;
+          transition-duration: 0.5s;
+          &:hover,
+          &.list-item-link-active {
+            color: #ffffff;
+          }
+        }
+      }
+      &.active-link-group {
+        scale: 1;
+        display: list-item;
+      }
+    }
+  }
+  &.remove-side-bar {
+    left: -216px;
+  }
+}

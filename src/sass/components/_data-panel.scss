@@ -1,0 +1,51 @@
+@import "./fonts";
+
+.data-panel {
+    margin-top: 11px;
+
+    .table-left {}
+
+    .table-center {}
+
+    .table-right {
+        width: 174px;
+
+        tbody {
+            tr {
+                width: 100%;
+                min-height: 100px;
+                background: #F9F1F1;
+                border: 1px solid #F2ABAB;
+                border-radius: 3px;
+
+                .top {
+                    .title {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 140%;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: #717171;
+                    }
+
+                    .price {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 140%;
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        color: #00405B;
+                    }
+                }
+
+                .middle {}
+
+                .bottom {}
+            }
+        }
+    }
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Bootstrap Icon Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <title>Quickmanage</title>
+</head>
+
+<body>
+  <div class="quickmanage d-flex">
+
+    <!-- Sidebar menu -->
+    <div class="sidebar__menu">
+      <div class="title d-flex justify-content-center align-items-center">
+        <img src="./src/assets/brand-icon.png" alt="quickmanage" />
+      </div>
+
+      <div class="quick__add">
+        <button class="btn gap-3">
+          <span>Quick Add</span>
+          <i class="fas fa-plus fw-light"></i>
+        </button>
+      </div>
+
+      <!-- menu box -->
+      <div class="menu d-flex flex-column gap-3">
+        <a href="#" class="router-link dashboard menu-icon">
+          <img src="./src/assets/dashboard.png" title="dashboard" />
+          <span>Dashboard</span>
+        </a>
+
+        <a href="#" class="router-link notifications menu-icon">
+          <img src="./src/assets/notifications.png" title="notifications" />
+          <span>Notifications</span>
+        </a>
+
+        <!-- Dispatching Box -->
+        <div class="dispatching">
+          <a href="#"
+            class="router-link active-router-link drop__down menu-icon d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./src/assets/dispatching.png" title="dispatching" />
+              <span>Dispatching</span>
+            </div>
+            <button class="btn sort__icon">
+              <i class="fas fa-sort-down"></i>
+            </button>
+          </a>
+
+          <!-- Trips & Planning Box -->
+          <ul class="list-group-disc">
+            <li class="list-item">
+              <a href="#" class="list-item-link">Trips & Planning</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="position-relative list-item-link list-item-link-active">
+                Dispatch Board
+                <span class="position-absolute start-100 badge"> New </span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="position-relative list-item-link">
+                Chats
+                <span class="position-absolute start-100 badge"> New </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Accounting Box -->
+        <div class="accounting">
+          <a href="#" class="router-link drop__down menu-icon d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./src/assets/accounting.png" title="accounting" />
+              <span> Accounting </span>
+            </div>
+            <button class="btn sort__icon">
+              <i class="fas fa-sort-down"></i>
+            </button>
+          </a>
+          <ul class="list-group-disc">
+            <li class="list-item">
+              <a href="#" class="list-item-link">Receivables</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Payables </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Prepayments </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Payroll </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Fleet Box -->
+        <div class="fleet">
+          <a href="#" class="router-link drop__down menu-icon d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./src/assets/fleet.png" title="fleet" />
+              <span class="position-relative">
+                Fleet
+                <span class="position-absolute start-100 badge"> New </span>
+              </span>
+            </div>
+            <button class="btn sort__icon">
+              <i class="fas fa-sort-down"></i>
+            </button>
+          </a>
+          <ul class="list-group-disc">
+            <li class="list-item">
+              <a href="#" class="list-item-link">Fleet Board</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Maintenance </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Safety Box -->
+        <div class="safety">
+          <a href="#" class="router-link drop__down menu-icon d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./src/assets/safety.png" title="safety" />
+              <span class="position-relative">
+                Safety
+                <span class="position-absolute start-100 badge"> New </span>
+              </span>
+            </div>
+            <button class="btn sort__icon">
+              <i class="fas fa-sort-down"></i>
+            </button>
+          </a>
+          <ul class="list-group-disc">
+            <li class="list-item">
+              <a href="#" class="list-item-link">Safety Board</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Inspections & Claims </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> IFTA </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Account Resources Box -->
+        <div class="account__resources">
+          <a href="#" class="router-link drop__down menu-icon d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./src/assets/account__resources.png" alt="Account Resources" />
+              <span> Account Resources </span>
+            </div>
+            <button class="btn sort__icon">
+              <i class="fas fa-sort-down"></i>
+            </button>
+          </a>
+          <ul class="list-group-disc">
+            <li class="list-item">
+              <a href="#" class="list-item-link">My Companies</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Factors </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Employees </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link">Equipments</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Customers & Vendors </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Integrations </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Attachments </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item-link"> Addresses Book </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="router-link reports menu-icon">
+          <img src="./src/assets/reports.png" title="reports" />
+          <span class="position-relative">
+            Reports
+            <span class="position-absolute start-100 badge"> New </span>
+          </span>
+        </a>
+
+        <a href="#" class="router-link tutorials menu-icon">
+          <img src="./src/assets/tutorials.png" title="tutorials" />
+          <span> Tutorials </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Data section -->
+    <header content-box>
+
+      <!-- Navbar Box -->
+      <nav class="d-flex align-items-center justify-content-between">
+        <div>
+          <button class="menu icon btn" sidebar-toggler-icon>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+
+          <!-- Settings management -->
+          <button class="setting icon btn pb-2">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+
+          <!-- User section -->
+          <div class="user__section d-flex flex-column justify-content-center">
+            <h4 class="name">Khasanboy Abdullaev</h4>
+            <h4 class="owner">Owner</h4>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Section -->
+      <main class="px-4 pt-4 pb-5">
+
+        <!-- Main Top Box -->
+        <div class="main-top d-flex justify-content-between align-items-center">
+          <h2 class="dispatch__board">Dispatch Board</h2>
+          <div class="d-flex align-items-center gap-2">
+            <h2>All Companies</h2>
+            <div class="filter">
+              <button class="btn filter__item d-flex justify-content-center align-items-center">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Statistics Box -->
+        <div class="statistics w-100 bg-white d-flex justify-content-between align-items-center flex-wrap p-1">
+          <div class="statistics-left mx-2 d-flex gap-4">
+            <button class="btn active">Update Board</button>
+            <button class="btn">Map View</button>
+          </div>
+          <div class="statistics-right d-flex gap-2 flex-wrap">
+
+            <div class="statistics-right-content d-flex align-items-center justify-content-between">
+              <img src="./src/assets/warning.png" alt="warning">
+              <div class="content-box text-end d-flex flex-column justify-content-center">
+                <h4>2</h4>
+                <p>
+                  Currently Ready Drivers
+                </p>
+              </div>
+            </div>
+
+            <div class="statistics-right-content d-flex align-items-center justify-content-between">
+              <img src="./src/assets/driver.png" alt="driver">
+              <div class="content-box text-end d-flex flex-column justify-content-center">
+                <h4>8</h4>
+                <p>
+                  Total Active Drivers
+                </p>
+              </div>
+            </div>
+
+            <div class="statistics-right-content d-flex align-items-center justify-content-between">
+              <img src="./src/assets/gross.png" alt="gross">
+              <div class="content-box text-end d-flex flex-column justify-content-center">
+                <h4 class="gross">$15,152.00</h4>
+                <p>
+                  Total Gross
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Management Part -->
+        <div class="management-part d-flex flex-wrap align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-4">
+
+            <div class="search__box d-flex align-items-center justify-content-between px-2">
+              <input type="text" placeholder="Search by Unit #, Driver name">
+              <span>
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+
+            <div class="advanced-filter d-flex align-items-center justify-content-between p-1">
+              <span class="title">Advanced Filter</span>
+              <span>
+                <img src="./src/assets/advanced-filter.png" title="advanced-filter">
+              </span>
+            </div>
+
+            <div class="sort-driver-mileage d-flex align-items-center gap-2">
+              <div class="sort">
+                <div class="sort-btn"></div>
+              </div>
+              <span class="title">Sort by Driven Mileage</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-4">
+            <button class="btn refresh gap-2">
+              <span>Refresh</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff
+                  }
+                </style>
+                <path
+                  d="M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z" />
+              </svg>
+            </button>
+            <div class="date d-flex align-items-center justify-content-center">
+              Feb 27 - Mar 05, 2023
+            </div>
+            <div class="pid d-flex gap-2 align-items-center justify-content-center">
+              <span class="caret d-flex align-items-center justify-content-center">
+                <i class="fas fa-caret-left"></i>
+              </span>
+              <span>PID:</span>
+              <b>2022-15</b>
+              <span class="caret d-flex align-items-center justify-content-center">
+                <i class="fas fa-caret-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Panel -->
+        <div class="data-panel d-flex gap-1">
+          <div class="table-responsive">
+            <table class="table table-left">
+              <thead>
+                <tr>
+                  <th>
+                    <span>Drivers’ Current Details</span>
+                  </th>
+                  <th>
+                    <span>Special Notes</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-center">
+              <thead>
+                <tr>
+                  <th>
+                    <small>Jan 1</small><span>Monday</span>
+                  </th>
+                  <th>
+                    <small>Jan 2</small><span>Tuesday</span>
+                  </th>
+                  <th>
+                    <small>Jan 3</small><span>Wednesday</span>
+                  </th>
+                  <th>
+                    <small>Jan 4</small><span>Thursday</span>
+                  </th>
+                  <th>
+                    <small>Jan 5</small><span>Friday</span>
+                  </th>
+                  <th>
+                    <small>Jan 6</small><span>Saturday</span>
+                  </th>
+                  <th>
+                    <small>Jan 7</small><span>Sunday</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-right">
+              <thead>
+                <tr>
+                  <th>Summary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="top">
+                      <div class="d-flex w-100 justify-content-between align-items-center">
+                        <span class="title">GROSS</span>
+                        <span class="price">$8533.56</span>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between align-items-center">
+                        <span class="title">MILEAGE</span>
+                        <span class="price">3508 mi</span>
+                      </div>
+                    </div>
+                    <div class="middle">
+                      <b>READY</b>
+                      <small>(Get a Load)</small>
+                      <span>
+                        <i class="fas fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <div class="bottom">
+                      <div>
+                        <div>
+                          <img src="./src/assets/location.png" title="location">
+                          <span>Pittsburgh, PA</span>
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </header>
+  </div>
+
+  <!-- font awesome scipt code -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+  <!-- Main Script Code -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@mixin normal-semibold-xxsm-font {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin normal-semibold-xsm-font {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin normal-semibold-sm-font {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin normal-bolder-md-font {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin normal-semibold-lg-font {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+
+@mixin normal-bold-lg-font {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
