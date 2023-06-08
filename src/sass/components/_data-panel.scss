@@ -3,48 +3,542 @@
 .data-panel {
     margin-top: 11px;
 
-    .table-left {}
+    .table>:not(caption)>*>* {
+        background-color: transparent;
+        border-bottom: none !important;
+    }
 
-    .table-center {}
+    table thead tr th h4 {
+        @include normal-bold-14-font;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #00405B;
+    }
 
-    .table-right {
-        width: 174px;
+    .table-left {
+        margin-top: 25px;
 
         tbody {
-            tr {
-                width: 100%;
-                min-height: 100px;
-                background: #F9F1F1;
+            .data {
+                min-height: 150px;
+                width: 478px;
+                padding: 10px 5px 5px 20px;
                 border: 1px solid #F2ABAB;
                 border-radius: 3px;
+                background-color: #fff;
 
-                .top {
-                    .title {
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 12px;
-                        line-height: 140%;
-                        display: flex;
-                        align-items: center;
-                        text-transform: capitalize;
+                &.warn {
+                    background: #F9F1F1;
+                }
+
+                td {
+
+                    .data-content {
+
+                        .user {
+                            &-name {
+                                @include normal-semibold-14-font;
+                                text-transform: capitalize;
+                                color: #000000;
+                                opacity: 0.9;
+                                text-decoration-line: underline;
+                            }
+
+                            &-id {
+                                width: 48px;
+                                border-radius: 3px;
+                                background: #00405B;
+                                border-radius: 3px;
+                                @include normal-semibold-12-font;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-transform: capitalize;
+                                color: #FFFFFF;
+                            }
+
+                            &-type {
+                                @include normal-bold-10-font;
+                                display: flex;
+                                align-items: center;
+                                text-transform: capitalize;
+                                color: #717171;
+                                opacity: 0.9;
+                            }
+                        }
+
+                        .actions {
+                            margin: 10px 0;
+
+                            .action {
+                                margin: 5px 0;
+                                width: 300px;
+
+                                .chocolate {
+                                    color: #993503;
+                                }
+
+                                b {
+                                    width: 100px;
+                                    @include normal-bold-10-font;
+                                    display: flex;
+                                    align-items: center;
+                                    text-transform: capitalize;
+                                    opacity: 0.9;
+                                }
+
+                                .desc {
+                                    width: 150px;
+                                    @include normal-bold-10-font;
+                                    display: flex;
+                                    align-items: center;
+                                    text-transform: capitalize;
+
+                                    span {
+                                        color: #717171;
+                                        padding: 0 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .data-description {
+                        top: 5px;
+                        height: 133px;
+                        width: 175px;
+                        background: #F8F8F8;
+                        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 2px;
+                        padding: 10px;
+                        overflow: auto;
+
+                        h4 {
+                            @include normal-semibold-12-font;
+                        }
+
+                        .no-special-notes {
+                            @include normal-semibold-12-font;
+                            color: #C5C5C5;
+                        }
+                    }
+                }
+            }
+
+            .line {
+                height: 5px;
+            }
+        }
+    }
+
+    .table-center {
+        thead {
+            tr {
+                th {
+                    text-align: center;
+
+                    small {
+                        @include normal-semibold-11-font;
                         color: #717171;
                     }
 
-                    .price {
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 140%;
+                    h4 {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        tbody {
+
+            tr {
+                position: relative;
+                height: 150px;
+                border: 1px solid #F2ABAB;
+                border-radius: 3px;
+                padding: 0;
+                background-color: #f2f2f2;
+
+                &.line {
+                    height: 5px;
+                }
+
+                td {
+                    padding: 0;
+
+                    .delivered {
+                        position: absolute;
+                        height: 30px;
+                        border-radius: 3px;
+                        background: #E9F6F6;
+                        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 3px;
+
+                        &.one {
+                            width: 200px;
+                            top: 7px;
+                            left: 66px;
+                        }
+
+                        &.two {
+                            width: 253px;
+                            top: 7px;
+                            left: 381px;
+                        }
+
+                        &.three {
+                            left: 0;
+                            top: 8px;
+                            width: 256px;
+                        }
+
+                        &.four {
+                            left: 272px;
+                            top: 8px;
+                            width: 285px;
+                        }
+
+                        &.five {
+                            left: 247px;
+                            top: 7px;
+                            width: 285px;
+                        }
+
+                        &.transit {
+                            background-color: #ffe8cd;
+
+                            &.six {
+                                left: 545px;
+                                top: 7px;
+                                width: 252px;
+                            }
+                        }
+
+                        &.seven {
+                            top: 8px;
+                            width: 200px;
+                            left: 20px;
+                        }
+
+                        &.eight {
+                            width: 285px;
+                            top: 7px;
+                            left: 320px;
+                        }
+
+                        &.nine {
+                            width: 285px;
+                            top: 7px;
+                            left: 145px;
+                        }
+
+                        &.ten {
+                            width: 135px;
+                            top: 7px;
+                            left: 1px;
+                        }
+
+                        &.eleven {
+                            width: 135px;
+                            top: 7px;
+                            left: 400px;
+                        }
+
+                        &.upcoming {
+                            right: 0;
+                            width: 109px;
+                            top: 7px;
+                        }
+
+                        .badge {
+                            background: #00405B;
+                            border-radius: 13px;
+                            height: 11px;
+                            width: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 13px;
+                            @include normal-semibold-10-font;
+                        }
+
+                        .title {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 9px;
+                            line-height: 140%;
+                            color: #1B8D00;
+                        }
+
+                        span {
+                            @include normal-semibold-7-font;
+                        }
+
+                        b {
+                            @include normal-bold-7-font;
+                        }
+                    }
+
+                    .not-delivered {
+                        position: absolute;
+                        left: 286px;
+                        top: 8px;
+                        background: #F2F2F2;
+                        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 3px;
+                        height: 30px;
+                        width: 32px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 3px;
+
+                        &.two {
+                            top: 7px;
+                            left: 240px;
+                        }
+
+                        &.three {
+                            top: 7px;
+                            left: 360px;
+
+                        }
+
+                        .badge {
+                            background: #00405B;
+                            border-radius: 13px;
+                            height: 11px;
+                            width: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 13px;
+                            @include normal-semibold-10-font;
+                        }
+
+                        .title {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 9px;
+                            line-height: 140%;
+                            color: #717171;
+                        }
+
+                    }
+
+                    .more-box {
+                        position: absolute;
+                        top: 7px;
+                        left: 7px;
+                        display: flex;
+                        gap: 30px;
+                    }
+
+                    .more {
+
+                        &.two {
+                            top: 7px;
+                            position: absolute;
+                            left: 240px;
+                        }
+
+                        .badge {
+                            background: #00405B;
+                            border-radius: 13px;
+                            height: 11px;
+                            width: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 13px;
+                            @include normal-semibold-10-font;
+                        }
+
+                        .box {
+                            height: 30px;
+                            width: 29px;
+                            background: #E9F6F6;
+                            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 3px;
+
+                            span {
+                                @include normal-semibold-9-font;
+                                color: #1B8D00;
+                            }
+
+                        }
+
+                        .text {
+                            @include normal-semibold-9-font;
+                            color: #717171;
+                        }
+                    }
+
+                    .data {
+                        position: relative;
+                        height: 140px;
+                        width: 115px;
+                        padding: 0 5px 0 0;
+
+                        .data-description {
+                            position: absolute;
+                            bottom: 4px;
+                            left: 2%;
+                            width: 96%;
+                            height: 47px;
+                            background: #FCF5EB;
+                            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+                            padding: 5px;
+                            border-radius: 3px;
+
+                            &.line {
+                                border-left: 3px solid red;
+                            }
+
+                            .warning {
+                                background: linear-gradient(90deg, #DB1710 2.85%, #FCEBEB 3.13%, #FCEBEB 97.92%) !important;
+                                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+                            }
+
+                            h5 {
+                                @include normal-semibold-8-font;
+                            }
+                        }
+                    }
+
+                    .not-data {
+                        height: inherit;
+                        width: inherit;
                         display: flex;
                         align-items: center;
-                        text-transform: capitalize;
-                        color: #00405B;
+                        justify-content: center;
+
+                        h5 {
+                            @include normal-semibold-8-font;
+                            color: #686868;
+                        }
                     }
                 }
 
-                .middle {}
+                td:nth-child(1n) {
+                    background-color: #F9F1F1;
+                }
 
-                .bottom {}
+                td:nth-child(2n) {
+                    background-color: #dadada;
+                }
+
+                &.warn {
+                    background: #F9F1F1;
+                }
+            }
+        }
+    }
+
+    .table-right {
+        width: 174px;
+        margin-top: 25px;
+
+        tbody {
+            tr {
+                td {
+                    padding: 0 0 5px 0;
+
+                    &>div {
+                        width: 100%;
+                        padding: 10px;
+                        min-height: 150px;
+                        background-color: #fff;
+                        border: 1px solid #F2ABAB;
+                        border-radius: 3px;
+
+                        &.warn {
+                            background: #F9F1F1;
+                        }
+
+                        .top {
+                            .title {
+                                @include normal-semibold-12-font;
+                                display: flex;
+                                align-items: center;
+                                text-transform: capitalize;
+                                color: #717171;
+                            }
+
+                            .price {
+                                @include normal-semibold-12-font;
+                                display: flex;
+                                align-items: center;
+                                text-transform: capitalize;
+                                color: #00405B;
+                            }
+                        }
+
+                        .middle {
+                            width: 100%;
+                            margin-top: 10px;
+                            padding: 10px;
+                            border-radius: 2px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .title {
+                                display: flex;
+                                align-items: center;
+                                text-transform: capitalize;
+                                color: #00405B;
+                                opacity: 0.9;
+                                @include normal-semibold-12-font;
+                            }
+                        }
+
+                        .ready {
+                            background-color: #FFADAD;
+                        }
+
+                        .transit {
+                            background-color: #FFEBD3;
+                        }
+
+                        .covered {
+                            background-color: #B1E2A5;
+                        }
+
+                        .resting {
+                            background-color: #C8FCFF;
+                        }
+
+                        .duty {
+                            background-color: #eecfc0;
+                        }
+
+                        .bottom {
+                            margin-top: 6px;
+
+                            .location {
+                                height: 20px;
+                                width: 140px;
+                                background: #FFFFFF;
+                                border: 0.8px solid #C5C5C5;
+                                border-radius: 2px;
+                                gap: 10px;
+                                padding: 5px;
+
+                                input {
+                                    @include normal-semibold-10-font;
+                                    border: none;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

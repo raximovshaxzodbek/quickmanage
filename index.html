@@ -294,7 +294,7 @@
 
         <!-- Management Part -->
         <div class="management-part d-flex flex-wrap align-items-center justify-content-between">
-          <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-4 flex-wrap">
 
             <div class="search__box d-flex align-items-center justify-content-between px-2">
               <input type="text" placeholder="Search by Unit #, Driver name">
@@ -318,7 +318,7 @@
             </div>
           </div>
 
-          <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-4 flex-wrap">
             <button class="btn refresh gap-2">
               <span>Refresh</span>
               <svg xmlns="http://www.w3.org/2000/svg" height="1.25em"
@@ -355,16 +355,311 @@
               <thead>
                 <tr>
                   <th>
-                    <span>Drivers’ Current Details</span>
+                    <h4>Drivers’ Current Details</h4>
                   </th>
                   <th>
-                    <span>Special Notes</span>
+                    <h4>Special Notes</h4>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td></td>
+                <tr class="data warn">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Khasanboy Abdullaev</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>12345</span>
+                          </div>
+                          <span class="user-type">SOLO</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-danger">Ready</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">ELD: HOS</b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small>5:10</small>
+                            <span>SH</span>
+                            <small>8:1</small>
+                            <span>C</span>
+                            <small>11:15</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description">
+                      <h4>Bu hafta uyiga boraman deyapti</h4>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data warn">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Maksim Macadonski</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>533</span>
+                          </div>
+                          <span class="user-type">SOLO</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-danger">Ready</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">ELD: HOS</b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small>5:10</small>
+                            <span>SH</span>
+                            <small>8:1</small>
+                            <span>C</span>
+                            <small>11:15</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description">
+                      <h4>TONU va DHga compensation bergan new Load number bn shuni check qililar please</h4>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Elbek Kamoliddinov</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>533</span>
+                          </div>
+                          <span class="user-type">SOLO</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-dark">Cover</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">ELD: HOS</b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small>5:10</small>
+                            <span>SH</span>
+                            <small>8:1</small>
+                            <span>C</span>
+                            <small>11:15</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description">
+                      <h4>Bu hafta uyiga boraman deyapti</h4>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">
+                          Odiljon Sattorov
+                          <img src="./src/assets/warning-sm.png" title="warning" alt="warning">
+                        </h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>12345</span>
+                          </div>
+                          <span class="user-type">SOLO</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-warning">In Transit</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary d-flex gap-1">ELD: HOS <img src="./src/assets/not-icon.png"
+                              alt="not icon" title="not icon"></b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small class="text-danger">_</small>
+                            <span>SH</span>
+                            <small class="text-danger">_</small>
+                            <span>C</span>
+                            <small class="text-danger">_</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description d-flex justify-content-center align-items-center">
+                      <p class="no-special-notes">No Special Notes</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Elyor Latipov</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>92255</span>
+                          </div>
+                          <span class="user-type">TEAM</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-primary">Resting</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">ELD: HOS</b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small>5:10</small>
+                            <span>SH</span>
+                            <small>8:1</small>
+                            <span>C</span>
+                            <small>11:15</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description d-flex justify-content-center align-items-center">
+                      <p class="no-special-notes">No Special Notes</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Max Lee</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>92255</span>
+                          </div>
+                          <span class="user-type">TEAM</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc chocolate">Off Duty</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary d-flex gap-1">ELD: HOS <img src="./src/assets/not-icon.png"
+                              alt="not icon" title="not icon"></b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small class="text-danger">_</small>
+                            <span>SH</span>
+                            <small class="text-danger">_</small>
+                            <span>C</span>
+                            <small class="text-danger">_</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description d-flex justify-content-center align-items-center">
+                      <p class="no-special-notes">No Special Notes</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="data">
+                  <td>
+                    <div class="data-content">
+                      <div class="user">
+                        <h5 class="user-name">Odiljon Sattorov</h5>
+                        <div class="d-flex gap-2 align-items-center">
+                          <div class="user-id">
+                            <span>12345</span>
+                          </div>
+                          <span class="user-type">SOLO</span>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">STATUS:</b>
+                          <span class="desc text-warning">In Transit</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">LOCATION:</b>
+                          <span class="desc text-primary">Pittsburgh, PA</span>
+                        </div>
+                        <div class="action d-flex align-items-center">
+                          <b class="text-secondary">ELD: HOS</b>
+                          <div class="desc">
+                            <span>D</span>
+                            <small>5:10</small>
+                            <span>SH</span>
+                            <small>8:1</small>
+                            <span>C</span>
+                            <small>11:15</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data-description">
+                      <h4>Bu hafta uyiga boraman deyapti</h4>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -374,31 +669,708 @@
               <thead>
                 <tr>
                   <th>
-                    <small>Jan 1</small><span>Monday</span>
+                    <small>Jan 1</small>
+                    <h4>Monday</h4>
                   </th>
                   <th>
-                    <small>Jan 2</small><span>Tuesday</span>
+                    <small>Jan 2</small>
+                    <h4>Tuesday</h4>
                   </th>
                   <th>
-                    <small>Jan 3</small><span>Wednesday</span>
+                    <small>Jan 3</small>
+                    <h4>Wednesday</h4>
                   </th>
                   <th>
-                    <small>Jan 4</small><span>Thursday</span>
+                    <small>Jan 4</small>
+                    <h4>Thursday</h4>
                   </th>
                   <th>
-                    <small>Jan 5</small><span>Friday</span>
+                    <small>Jan 5</small>
+                    <h4>Friday</h4>
                   </th>
                   <th>
-                    <small>Jan 6</small><span>Saturday</span>
+                    <small>Jan 6</small>
+                    <h4>Saturday</h4>
                   </th>
                   <th>
-                    <small>Jan 7</small><span>Sunday</span>
+                    <small>Jan 7</small>
+                    <h4>Sunday</h4>
                   </th>
                 </tr>
               </thead>
               <tbody>
+                <tr class="warn">
+                  <td>
+                    <div class="delivered one d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="not-delivered">
+                      <span class="badge">1015</span>
+                      <div class="d-flex align-items-center">
+                        <img src="./src/assets/not-grey-icon.png" title="not">
+                        <span class="title">Can</span>
+                      </div>
+                    </div>
+                    <div class="delivered two d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Wort Worth</span>
+                        <b>TX</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1016</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Perrie</span>
+                        <b>PA</b>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr class="warn">
+                  <td>
+                    <div class="delivered three d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="delivered four d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
                 <tr>
-                  <td></td>
+                  <td>
+                    <div class="more-box">
+                      <div class="more d-flex align-items-center gap-1">
+                        <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                          <div class="badge">1012</div>
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/success.png" alt="success">
+                            <span>Del</span>
+                          </div>
+                        </div>
+                        <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                          <div class="badge">1012</div>
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/success.png" alt="success">
+                            <span>Del</span>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                          <span class="text">More</span>
+                          <span class="fas fa-sort-down"></span>
+                        </div>
+                      </div>
+                      <div class="more d-flex align-items-center gap-1">
+                        <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                          <div class="badge">1012</div>
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/success.png" alt="success">
+                            <span>Del</span>
+                          </div>
+                        </div>
+                        <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                          <div class="badge">1012</div>
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/success.png" alt="success">
+                            <span>Del</span>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                          <span class="text">More</span>
+                          <span class="fas fa-sort-down"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="delivered upcoming d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-1">
+                        <span>Perrie</span>
+                        <b>PA</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start flex-column gap-1">
+                        <span class="badge">1011</span>
+                        <div class="d-flex align-items-center">
+                          <img src="./src/assets/upcoming.png" title="upcoming">
+                          <span class="title text-primary">Upcoming</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr>
+                  <td>
+                    <div class="delivered five d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="delivered transit six d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/transit.png" title="transit">
+                          <span class="title">In Transit</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr>
+                  <td>
+                    <div class="delivered seven d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="not-delivered two">
+                      <span class="badge">1015</span>
+                      <div class="d-flex align-items-center">
+                        <img src="./src/assets/not-grey-icon.png" title="not">
+                        <span class="title">Can</span>
+                      </div>
+                    </div>
+                    <div class="delivered eight d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="delivered upcoming d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-1">
+                        <span>Perrie</span>
+                        <b>PA</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start flex-column gap-1">
+                        <span class="badge">1011</span>
+                        <div class="d-flex align-items-center">
+                          <img src="./src/assets/upcoming.png" title="upcoming">
+                          <span class="title text-primary">Upcoming</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+
+                    </div>
+                  </td>
+                </tr>
+                <tr class="line"></tr>
+                <tr>
+                  <td>
+                    <div class="delivered nine d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="line"></tr>
+                <tr>
+                  <td>
+                    <div class="delivered ten d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex justify-content-center align-items-start flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="not-delivered three">
+                      <span class="badge">1015</span>
+                      <div class="d-flex align-items-center">
+                        <img src="./src/assets/not-grey-icon.png" title="not">
+                        <span class="title">Can</span>
+                      </div>
+                    </div>
+                    <div class="delivered eleven d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/success.png" title="success">
+                          <span class="title">Delivered</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+
+                    <div class="delivered transit six d-flex align-items-center justify-content-between p-2">
+                      <div class="d-flex flex-column gap-2">
+                        <span>Chicago</span>
+                        <b>IL</b>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+                        <span class="badge">1012</span>
+                        <div class="d-flex align-items-center gap-2">
+                          <img src="./src/assets/transit.png" title="transit">
+                          <span class="title">In Transit</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column gap-2">
+                        <span>Dallas</span>
+                        <b>TX</b>
+                      </div>
+                    </div>
+                    <div class="more two d-flex align-items-center gap-1">
+                      <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                        <div class="badge">1012</div>
+                        <div class="d-flex align-items-center">
+                          <img src="./src/assets/success.png" alt="success">
+                          <span>Del</span>
+                        </div>
+                      </div>
+                      <div class="box d-flex justify-content-center align-items-center flex-column p-1">
+                        <div class="badge">1012</div>
+                        <div class="d-flex align-items-center">
+                          <img src="./src/assets/success.png" alt="success">
+                          <span>Del</span>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column align-items-center justify-content-center">
+                        <span class="text">More</span>
+                        <span class="fas fa-sort-down"></span>
+                      </div>
+                    </div>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>NY ga yuk olinmaydi! asjhk asjdajhhdab sajdahda nasmd</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description line warning">
+                        <h5>Dam olib turamiz deyishdi</h5>
+                      </div>
+
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="data-description">
+                        <h5>Nodir aka take care qiladigan boldilar</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="data">
+                      <div class="not-data">
+                        <h5>No Daily note</h5>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -407,41 +1379,233 @@
             <table class="table table-right">
               <thead>
                 <tr>
-                  <th>Summary</th>
+                  <th>
+                    <h4>Summary</h4>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
-                    <div class="top">
-                      <div class="d-flex w-100 justify-content-between align-items-center">
-                        <span class="title">GROSS</span>
-                        <span class="price">$8533.56</span>
+                    <div class="warn">
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
                       </div>
-                      <div class="d-flex w-100 justify-content-between align-items-center">
-                        <span class="title">MILEAGE</span>
-                        <span class="price">3508 mi</span>
+                      <div class="middle ready">
+                        <div class="title">
+                          <b>READY </b>
+                          <small>(Get a Load)</small>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
                       </div>
-                    </div>
-                    <div class="middle">
-                      <b>READY</b>
-                      <small>(Get a Load)</small>
-                      <span>
-                        <i class="fas fa-angle-down"></i>
-                      </span>
-                    </div>
-                    <div class="bottom">
-                      <div>
-                        <div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
                           <img src="./src/assets/location.png" title="location">
-                          <span>Pittsburgh, PA</span>
+                          <input type="text" value="Pittsburgh, PA" name="location-name" placeholder="Location...">
                         </div>
                         <img src="./src/assets/refresh.png" title="refresh">
                       </div>
                     </div>
                   </td>
                 </tr>
-              </table>
+                <tr>
+                  <td>
+                    <div class="warn">
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle ready">
+                        <div class="title">
+                          <b>READY </b>
+                          <small>(Get a Load)</small>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div>
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle covered">
+                        <div class="title">
+                          <b>COVERED</b>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle transit">
+                        <div class="title">
+                          <b>IN TRANSIT</b>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle resting">
+                        <div class="title">
+                          <b>RESTING</b>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle duty">
+                        <div class="title">
+                          <b>OFF DUTY</b>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="top">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">GROSS</span>
+                          <span class="price">$8533.56</span>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <span class="title">MILEAGE</span>
+                          <span class="price">3508 mi</span>
+                        </div>
+                      </div>
+                      <div class="middle transit">
+                        <div class="title">
+                          <b>IN TRANSIT</b>
+                        </div>
+                        <span>
+                          <i class="fas fa-angle-down"></i>
+                        </span>
+                      </div>
+                      <div class="bottom w-full d-flex justify-content-between align-items-center">
+                        <div class="location d-flex align-items-center">
+                          <img src="./src/assets/location.png" title="location">
+                          <input type="text" value="Edison, PA" name="location-name" placeholder="Location...">
+                        </div>
+                        <img src="./src/assets/refresh.png" title="refresh">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+            </table>
             </table>
           </div>
         </div>

@@ -24,7 +24,7 @@
       color: #00405b;
       background: linear-gradient(90deg, #51fdb1 0%, #22b9ff 100%);
       border-radius: 30px;
-      @include normal-bolder-md-font;
+      @include normal-bolder-18-font;
       font-weight: 700;
     }
   }
@@ -56,7 +56,7 @@
       }
     }
     &-icon {
-      @include normal-bolder-md-font;
+      @include normal-bolder-18-font;
       display: flex;
       align-items: center;
       color: #c5c5c5;
@@ -68,7 +68,7 @@
     .badge {
       top: -5px;
       right: -5%;
-      @include normal-semibold-xxsm-font;
+      @include normal-semibold-9-font;
       color: #ff0000;
     }
 
@@ -80,7 +80,7 @@
         font-size: 12px;
         margin: 5px 0;
         &-link {
-          @include normal-semibold-sm-font;
+          @include normal-semibold-15-font;
           color: #c5c5c5;
           transition-duration: 0.5s;
           &:hover,

@@ -378,20 +378,476 @@
 .quickmanage header main .data-panel {
   margin-top: 11px;
 }
+.quickmanage header main .data-panel .table > :not(caption) > * > * {
+  background-color: transparent;
+  border-bottom: none !important;
+}
+.quickmanage header main .data-panel table thead tr th h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: #00405B;
+}
+.quickmanage header main .data-panel .table-left {
+  margin-top: 25px;
+}
+.quickmanage header main .data-panel .table-left tbody .data {
+  min-height: 150px;
+  width: 478px;
+  padding: 10px 5px 5px 20px;
+  border: 1px solid #F2ABAB;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.quickmanage header main .data-panel .table-left tbody .data.warn {
+  background: #F9F1F1;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .user-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 0.9;
+  text-decoration-line: underline;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .user-id {
+  width: 48px;
+  border-radius: 3px;
+  background: #00405B;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .user-type {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: #717171;
+  opacity: 0.9;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions {
+  margin: 10px 0;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions .action {
+  margin: 5px 0;
+  width: 300px;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions .action .chocolate {
+  color: #993503;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions .action b {
+  width: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions .action .desc {
+  width: 150px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-content .actions .action .desc span {
+  color: #717171;
+  padding: 0 5px;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-description {
+  top: 5px;
+  height: 133px;
+  width: 175px;
+  background: #F8F8F8;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 10px;
+  overflow: auto;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-description h4 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.quickmanage header main .data-panel .table-left tbody .data td .data-description .no-special-notes {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #C5C5C5;
+}
+.quickmanage header main .data-panel .table-left tbody .line {
+  height: 5px;
+}
+.quickmanage header main .data-panel .table-center thead tr th {
+  text-align: center;
+}
+.quickmanage header main .data-panel .table-center thead tr th small {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #717171;
+}
+.quickmanage header main .data-panel .table-center thead tr th h4 {
+  width: 100%;
+  text-align: center;
+}
+.quickmanage header main .data-panel .table-center tbody tr {
+  position: relative;
+  height: 150px;
+  border: 1px solid #F2ABAB;
+  border-radius: 3px;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.quickmanage header main .data-panel .table-center tbody tr.line {
+  height: 5px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td {
+  padding: 0;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered {
+  position: absolute;
+  height: 30px;
+  border-radius: 3px;
+  background: #E9F6F6;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.one {
+  width: 200px;
+  top: 7px;
+  left: 66px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.two {
+  width: 253px;
+  top: 7px;
+  left: 381px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.three {
+  left: 0;
+  top: 8px;
+  width: 256px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.four {
+  left: 272px;
+  top: 8px;
+  width: 285px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.five {
+  left: 247px;
+  top: 7px;
+  width: 285px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.transit {
+  background-color: #ffe8cd;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.transit.six {
+  left: 545px;
+  top: 7px;
+  width: 252px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.seven {
+  top: 8px;
+  width: 200px;
+  left: 20px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.eight {
+  width: 285px;
+  top: 7px;
+  left: 320px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.nine {
+  width: 285px;
+  top: 7px;
+  left: 145px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.ten {
+  width: 135px;
+  top: 7px;
+  left: 1px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.eleven {
+  width: 135px;
+  top: 7px;
+  left: 400px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered.upcoming {
+  right: 0;
+  width: 109px;
+  top: 7px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered .badge {
+  background: #00405B;
+  border-radius: 13px;
+  height: 11px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 13px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 140%;
+  color: #1B8D00;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered span {
+  font-size: 7px;
+  font-weight: 600;
+  line-height: 10px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .delivered b {
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 10px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-delivered {
+  position: absolute;
+  left: 286px;
+  top: 8px;
+  background: #F2F2F2;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  height: 30px;
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-delivered.two {
+  top: 7px;
+  left: 240px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-delivered.three {
+  top: 7px;
+  left: 360px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-delivered .badge {
+  background: #00405B;
+  border-radius: 13px;
+  height: 11px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 13px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-delivered .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 140%;
+  color: #717171;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more-box {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more.two {
+  top: 7px;
+  position: absolute;
+  left: 240px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more .badge {
+  background: #00405B;
+  border-radius: 13px;
+  height: 11px;
+  width: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 13px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more .box {
+  height: 30px;
+  width: 29px;
+  background: #E9F6F6;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more .box span {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #1B8D00;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .more .text {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #717171;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .data {
+  position: relative;
+  height: 140px;
+  width: 115px;
+  padding: 0 5px 0 0;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .data .data-description {
+  position: absolute;
+  bottom: 4px;
+  left: 2%;
+  width: 96%;
+  height: 47px;
+  background: #FCF5EB;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border-radius: 3px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .data .data-description.line {
+  border-left: 3px solid red;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .data .data-description .warning {
+  background: -webkit-gradient(linear, left top, right top, color-stop(2.85%, #DB1710), color-stop(3.13%, #FCEBEB), color-stop(97.92%, #FCEBEB)) !important;
+  background: linear-gradient(90deg, #DB1710 2.85%, #FCEBEB 3.13%, #FCEBEB 97.92%) !important;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.quickmanage header main .data-panel .table-center tbody tr td .data .data-description h5 {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 11.2px;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-data {
+  height: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.quickmanage header main .data-panel .table-center tbody tr td .not-data h5 {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 11.2px;
+  color: #686868;
+}
+.quickmanage header main .data-panel .table-center tbody tr td:nth-child(1n) {
+  background-color: #F9F1F1;
+}
+.quickmanage header main .data-panel .table-center tbody tr td:nth-child(2n) {
+  background-color: #dadada;
+}
+.quickmanage header main .data-panel .table-center tbody tr.warn {
+  background: #F9F1F1;
+}
 .quickmanage header main .data-panel .table-right {
   width: 174px;
+  margin-top: 25px;
 }
-.quickmanage header main .data-panel .table-right tbody tr {
+.quickmanage header main .data-panel .table-right tbody tr td {
+  padding: 0 0 5px 0;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div {
   width: 100%;
-  min-height: 100px;
-  background: #F9F1F1;
+  padding: 10px;
+  min-height: 150px;
+  background-color: #fff;
   border: 1px solid #F2ABAB;
   border-radius: 3px;
 }
-.quickmanage header main .data-panel .table-right tbody tr .top .title {
-  font-style: normal;
-  font-weight: 700;
+.quickmanage header main .data-panel .table-right tbody tr td > div.warn {
+  background: #F9F1F1;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .top .title {
   font-size: 12px;
+  font-weight: 600;
   line-height: 140%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,10 +858,9 @@
   text-transform: capitalize;
   color: #717171;
 }
-.quickmanage header main .data-panel .table-right tbody tr .top .price {
-  font-style: normal;
-  font-weight: 600;
+.quickmanage header main .data-panel .table-right tbody tr td > div .top .price {
   font-size: 12px;
+  font-weight: 600;
   line-height: 140%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +870,69 @@
           align-items: center;
   text-transform: capitalize;
   color: #00405B;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .middle {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .middle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: #00405B;
+  opacity: 0.9;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .ready {
+  background-color: #FFADAD;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .transit {
+  background-color: #FFEBD3;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .covered {
+  background-color: #B1E2A5;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .resting {
+  background-color: #C8FCFF;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .duty {
+  background-color: #eecfc0;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .bottom {
+  margin-top: 6px;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .bottom .location {
+  height: 20px;
+  width: 140px;
+  background: #FFFFFF;
+  border: 0.8px solid #C5C5C5;
+  border-radius: 2px;
+  gap: 10px;
+  padding: 5px;
+}
+.quickmanage header main .data-panel .table-right tbody tr td > div .bottom .location input {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+  border: none;
+  outline: none;
 }
 .quickmanage header.left {
   left: 0;

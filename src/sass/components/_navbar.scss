@@ -24,12 +24,12 @@ nav {
     height: 65px;
     cursor: pointer;
     h4.name {
-      @include normal-semibold-xsm-font;
+      @include normal-semibold-13-font;
       color: #ffffff;
       text-align: right;
     }
     h4.owner {
-      @include normal-semibold-xsm-font;
+      @include normal-semibold-13-font;
       color: #c5c5c5;
       text-align: right;
     }

@@ -14,7 +14,7 @@
             width: 80%;
             border: none;
             outline: none !important;
-            @include normal-semibold-xsm-font;
+            @include normal-semibold-13-font;
 
             &::placeholder {
                 color: #717171;
@@ -33,7 +33,7 @@
         cursor: pointer;
 
         .title {
-            @include normal-semibold-xsm-font;
+            @include normal-semibold-13-font;
             color: #717171;
         }
     }
@@ -60,7 +60,7 @@
         }
 
         .title {
-            @include normal-semibold-xsm-font;
+            @include normal-semibold-13-font;
             font-weight: bold !important;
             color: #00405B;
         }
@@ -74,7 +74,7 @@
         display: flex;
 
         span {
-            @include normal-semibold-xsm-font;
+            @include normal-semibold-13-font;
             color: #fff;
         }
     }
@@ -85,7 +85,7 @@
         background: linear-gradient(268.55deg, #E0F4FF 0%, #ECFFF9 100%);
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
         border-radius: 3px;
-        @include normal-semibold-sm-font;
+        @include normal-semibold-15-font;
         font-size: 16px !important;
         text-transform: capitalize;
         color: #000000;
